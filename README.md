@@ -1,9 +1,11 @@
-# PRM-Path-Planning
+# PRM-Path-Planning - Forked from https://github.com/KaleabTessera/PRM-Path-Planning
 Probabilistic Roadmaps is a path planning algorithm used in Robotics.
 
 ## How to run
 ```
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt --no-cache-dir
 python main.py
 ```
 
@@ -11,13 +13,6 @@ You can also specify number of samples:
 ```
 python main.py --numSamples [number]
 ```
-
-## Example Path
-### PRM with 1000 sample points.
-![PRM_1000](1000_samples.png)
-
-### PRM with 5000 sample points.
-![PRM_5000](5000_samples.png)
 
 ## Steps of algorithm
 1. Generate n random samples called milestones.
